@@ -47,3 +47,4 @@ let s=r.find(fruits=>
     fruits.length>5);
     console.log(s);
 
+
