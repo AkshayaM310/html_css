@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <style> 
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #04e9f5, #082ad6);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .box {
+        background: #ffffff;
+        width: 320px;
+        padding: 25px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+    .display-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f3f3f3;
+        padding: 8px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+
+    .display-box input {
+        width: 70%;
+        border: none;
+        background: none;
+        font-size: 16px;
+    }
+
+    .copy-btn {
+        background: #5c9bff;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+    }
+    .options {
+        text-align: left;
+        margin: 15px 0;
+    }
+
+    .options label {
+        display: block;
+        margin: 6px 0;
+    }
+
+   .generate-btn {
+        width: 100%;
+        padding: 10px;
+        background: #5b73ff;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"> <h1>Password generator </h1>
+    <div class="display-box">
+        <input type="text" placeholder="Generated Password" id="password">
+        <button class="copy-btn">Copy</button>
+    </div>
+
+    <label>Password length (4–20)</label>
+    <input type="range" min="4" max="20" value="10">
+
+    <div class="options">
+        <label><input type="checkbox" checked> Include lowercase (a–z)</label>
+        <label><input type="checkbox" checked> Include uppercase (A–Z)</label>
+        <label><input type="checkbox" checked> Include numbers (0–9)</label>
+        <label><input type="checkbox" checked> Include symbols (!@#$...)</label>
+    </div>
+    <button class="generate-btn">Generate</button>
+    </div>
+
+</body>
+</html>

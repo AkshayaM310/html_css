@@ -1,0 +1,42 @@
+<!--// dom-> to modify the html element  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_prac</title>
+</head>
+<body>
+
+    <p id="demo2"> </p>
+    <p id="demo3"> </p>
+
+    <p id="text"> Hello </p>
+    <button onclick="change()"> click to change</button>
+
+    <script>
+        //To apply html like <u> <i> <b> user innerHTML
+        //to exactly print the content inside quotes use innertext
+
+        document.getElementById("demo2").innerHTML="<i><b>WELCOME<b><i>";
+        document.getElementById("demo3").innerText="<u>Welcome<u>";
+        //onclick
+        function change()
+        {
+            document.getElementById("text").innerHTML="the text is changed";
+        }
+        
+        document.getElementById("demo2").style.backgroundColor="red";
+        document.getElementById("demo2").style.color="yellow";
+
+        // store document.getElementById("demo2").style. ==> in a variavle for esy usage
+
+        const txtstyl= document.getElementById("demo3");
+        txtstyl.style.color="violet";
+        txtstyl.style.backgroundColor="black";
+        txtstyl.style.padding="20px";
+
+    </script>
+</body>
+</html>
